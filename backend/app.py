@@ -47,7 +47,7 @@ class BookingResource(Resource):
         except ValueError:
             return make_response({"errors": ["Invalid date format. Use YYYY-MM-DD."]}, 400)
 
-        room = db.session.get(Room, room_id)
+        room = Room.query.filter_by(id=room_id).first()
 
         if not user or not room:
             return make_response({"errors": ["Invalid user_id or room_id"]}, 400)
