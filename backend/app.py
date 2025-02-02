@@ -8,7 +8,7 @@ from datetime import datetime
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hotel.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://hoteldb_p5cn_user:Od5JbzHlOXczeDd3nGcN3OXUV8UGyQMp@dpg-cuft29ij1k6c73fuf2eg-a.oregon-postgres.render.com/hoteldb_p5cn'
 
 db.init_app(app)
 migrate = Migrate(app,db)
