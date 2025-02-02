@@ -7,7 +7,7 @@ export default function Booking() {
 
   // Function to fetch bookings
   const fetchBookings = () => {
-    fetch("http://127.0.0.1:5000/bookings")
+    fetch("https://hotel-booking-system-xvqy.onrender.com/bookings")
       .then((res) => res.json())
       .then((data) => setBookings(data))
       .catch((err) => console.log("Error fetching bookings:", err));

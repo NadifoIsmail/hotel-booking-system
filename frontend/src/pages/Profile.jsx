@@ -6,7 +6,7 @@ export default function Profile() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/users")
+    fetch("https://hotel-booking-system-xvqy.onrender.com/users")
       .then((res) => res.json())
       .then((data) => setUsers(data))
       .catch((err) => console.log(err));

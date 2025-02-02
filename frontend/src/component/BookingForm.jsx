@@ -21,7 +21,7 @@ export default function BookingForm({ room, onBookingSuccess }) {
       check_out_date: Yup.date().required("Check-out date is required"),
     }),
     onSubmit: (values) => {
-      fetch("http://127.0.0.1:5000/bookings", {  
+      fetch("https://hotel-booking-system-xvqy.onrender.com/bookings", {  
         method: "POST",
         headers: {
           "Content-Type": "application/json",

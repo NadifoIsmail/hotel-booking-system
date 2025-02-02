@@ -7,7 +7,7 @@ export default function Room() {
 
   
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/rooms")  
+    fetch("https://hotel-booking-system-xvqy.onrender.com/rooms")  
       .then((res) => res.json())
       .then((data) => setRooms(data))
       .catch((err) => console.error("Error fetching rooms:", err));

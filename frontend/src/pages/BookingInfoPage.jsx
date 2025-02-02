@@ -15,7 +15,7 @@ export default function BookingInfoPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:5000/bookings/${id}`)
+    fetch(`https://hotel-booking-system-xvqy.onrender.com/bookings/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch booking");
         return res.json();
