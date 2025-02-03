@@ -2,7 +2,7 @@
 This is a full-stack Hotel Management System built with Flask (backend) and React (frontend). Users can view available rooms and book them, while admins can manage users and bookings.
 
 ## Resources
-- **Deployed Frontend**: [Hotel Booking System- Frontend](https://bookrooms-nine.vercel.app/)
+- **Deployed Frontend**: [Hotel Booking System- Frontend](https://roombooking-self.vercel.app/)
 - **Deployed Backend**: [Hotel Booking System - Backend](https://hotel-booking-system-xvqy.onrender.com)
 
 ## Prerequisites
@@ -35,13 +35,17 @@ To set up the backend,follow the following steps:
 
 ## Features
 
-- **Users can view available rooms and book a room.**
-- **Admins can manage users and bookings.**
-- **Rooms are displayed in cards (image, room type, number, price).**
-- **Uses PostgreSQL for persistent storage.**
+- Users can view available rooms and book a room.
+- Admins can manage users and bookings.
+- Rooms are displayed in cards (image, room type, number, price).
+- Uses PostgreSQL for persistent storage.
 
 ## Tech stack 
  1. Frontend: React (Vite, Bootstrap)
  2. Backend: Flask (Flask-SQLAlchemy, Flask-Migrate)
  3. Database: PostgreSQL
  4. Styling: Bootstrap
+
+ ## Known issues 
+ - **Delayed backend fetching issue** :Whenever a user accesses the app it takes a long time for the backed to fetch the data
+  
