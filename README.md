@@ -21,7 +21,7 @@ To set up and run the frontend application, follow these steps:
 3. Start the React Development Server
     npm run dev
 
-To set up the backend:
+To set up the backend,follow the following steps:
 1. Clone the Repository
     git clone https://github.com/yourusername/hotel-management.git
     cd hotel-management/backend
