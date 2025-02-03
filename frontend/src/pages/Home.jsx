@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <div className="image-container col ">
           <img
-            src="image/hotel.avif"
+            src="/image/hotel.avif"
             alt="Hotel"
             className="hotel-image img-fluid w-100 rounded"
           />

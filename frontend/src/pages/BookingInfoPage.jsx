@@ -49,7 +49,7 @@ export default function BookingInfoPage() {
         throw new Error("Failed to delete booking");
       }
       toast.success("Booking deleted successfully");
-      navigate("/"); // Redirect to home or bookings list
+      navigate("/"); // Redirect to home
       
     } catch (err) {
       console.error("Error deleting booking:", err);
