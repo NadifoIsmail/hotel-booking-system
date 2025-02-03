@@ -90,7 +90,7 @@ export default function BookingInfoPage() {
           <p><strong>Check-out:</strong> {new Date(booking.end_date).toLocaleDateString()}</p>
           <p><strong>Username:</strong> {booking.user.name}</p>
           <p><strong>Room type:</strong> {booking.room.room_type}</p>
-          <button onClick={handleDelete} className="btn btn-danger me-2">Delete Booking</button>
+          <button onClick={handleDelete(booking.id)} className="btn btn-danger me-2">Delete Booking</button>
           <button onClick={() => setShowModal(true)} className="btn btn-warning">Update Booking</button>
         </div>
       </div>
