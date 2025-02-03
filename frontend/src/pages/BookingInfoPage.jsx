@@ -41,7 +41,7 @@ export default function BookingInfoPage() {
   
   const handleDelete = async (id) => {
     try {
-      const res = await fetch(`http://127.0.0.1:5000/bookings/${id}`, {
+      const res = await fetch(`https://hotel-booking-system-xvqy.onrender.com/bookings/${id}`, {
         method: "DELETE",
       });
 
@@ -59,7 +59,7 @@ export default function BookingInfoPage() {
 
   const handleUpdate = async (id) => {
     try {
-      const res = await fetch(`http://127.0.0.1:5000/bookings/${id}`, {
+      const res = await fetch(`https://hotel-booking-system-xvqy.onrender.com/bookings/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({roomType,startDate,endDate}),
