@@ -39,7 +39,7 @@ export default function BookingInfoPage() {
   },[booking]);
 
   
-  const handleDelete = async () => {
+  const handleDelete = async (id) => {
     try {
       const res = await fetch(`http://127.0.0.1:5000/bookings/${id}`, {
         method: "DELETE",
@@ -57,7 +57,7 @@ export default function BookingInfoPage() {
     }
   };
 
-  const handleUpdate = async () => {
+  const handleUpdate = async (id) => {
     try {
       const res = await fetch(`http://127.0.0.1:5000/bookings/${id}`, {
         method: "PATCH",
@@ -104,7 +104,7 @@ export default function BookingInfoPage() {
                 <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
               </div>
               <div className="modal-body">
-                <form onSubmit={(e) => { e.preventDefault(); handleUpdate(); }}>
+                <form onSubmit={(e) => { e.preventDefault(); handleUpdate(booking.id); }}>
                   <div className="mb-3">
                     <label className="form-label">Room Type</label>
                     <input
